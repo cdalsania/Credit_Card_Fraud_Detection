@@ -26,3 +26,11 @@ csv_file_path = environ.get('CSV_FILE_PATH') or CSV_FILE_URL
 @app.route('/')
 def index():
     return render_template('index.html')
+
+###############################################
+# Run the Flask Application
+###############################################
+
+# Spin-up the Flask Application
+if __name__ == "__main__":
+    app.run(debug=True)
