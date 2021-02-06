@@ -1,0 +1,5 @@
+/* The footer is positioned at the bottom of the page */
+
+.border-top {
+    border-top: 1px solid rgb(106, 145, 189)!important;
+}
