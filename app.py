@@ -27,6 +27,14 @@ csv_file_path = environ.get('CSV_FILE_PATH') or CSV_FILE_URL
 def index():
     return render_template('index.html')
 
+@app.route('/navbar')
+def navbar():
+    return render_template('navbar.html')
+
+@app.route('/footer')
+def footer():
+    return render_template('footer.html')
+
 ###############################################
 # Run the Flask Application
 ###############################################
