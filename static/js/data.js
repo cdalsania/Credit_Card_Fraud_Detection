@@ -64,3 +64,8 @@ function fetchPageData(pageNum) {
 function onPrevClicked() {
     d3.event.preventDefault();
 }
+
+// fetch next page data
+function onNextClicked() {
+    d3.event.preventDefault();
+}
