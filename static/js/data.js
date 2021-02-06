@@ -106,3 +106,134 @@ function enablePageNumLinks() {
     d3.select("#page-num-li-4").classed('disabled', currLi4DisabledVal);
     d3.select("#page-num-li-5").classed('disabled', currLi5DisabledVal);
 }
+
+/***************************************************
+EVENT HANDLERS
+****************************************************/
+d3.select("#prevButton").on("click", onPrevClicked);
+d3.select("#nextButton").on("click", onNextClicked);
+
+// page number link event handler
+d3.select("#page-num-link-1").on("click", function() {
+    d3.event.preventDefault();
+    if (d3.select("#page-num-li-1").classed("active") == false) {
+        // display a message to the user
+        fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+        // clear table content before loading
+        tableBody.html("");
+
+        disablePageNumLinks();
+
+        d3.select("#page-num-li-1").classed("active", true);
+        d3.select("#page-num-li-2").classed("active", false);
+        d3.select("#page-num-li-3").classed("active", false);
+        d3.select("#page-num-li-4").classed("active", false);
+        d3.select("#page-num-li-5").classed("active", false);
+
+        var pageNum = d3.select(this).text();
+        fetchPageData(pageNum);
+
+        enablePageNumLinks();
+    }
+});
+
+// page number link event handler
+d3.select("#page-num-link-2").on("click", function() {
+    d3.event.preventDefault();
+    if (d3.select("#page-num-li-2").classed("active") == false) {
+        // display a message to the user
+        fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+        // clear table content before loading
+        tableBody.html("");
+
+        disablePageNumLinks();
+
+        d3.select("#page-num-li-1").classed("active", false);
+        d3.select("#page-num-li-2").classed("active", true);
+        d3.select("#page-num-li-3").classed("active", false);
+        d3.select("#page-num-li-4").classed("active", false);
+        d3.select("#page-num-li-5").classed("active", false);
+
+        var pageNum = d3.select(this).text();
+        fetchPageData(pageNum);
+
+        enablePageNumLinks();
+    }
+});
+
+// page number link event handler
+d3.select("#page-num-link-3").on("click", function() {
+    d3.event.preventDefault();
+    if (d3.select("#page-num-li-3").classed("active") == false) {
+        // display a message to the user
+        fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+        // clear table content before loading
+        tableBody.html("");
+
+        disablePageNumLinks();
+
+        d3.select("#page-num-li-1").classed("active", false);
+        d3.select("#page-num-li-2").classed("active", false);
+        d3.select("#page-num-li-3").classed("active", true);
+        d3.select("#page-num-li-4").classed("active", false);
+        d3.select("#page-num-li-5").classed("active", false);
+
+        var pageNum = d3.select(this).text();
+        fetchPageData(pageNum);
+
+        enablePageNumLinks();
+    }
+});
+
+// page number link event handler
+d3.select("#page-num-link-4").on("click", function() {
+    d3.event.preventDefault();
+    if (d3.select("#page-num-li-4").classed("active") == false) {
+        // display a message to the user
+        fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+        // clear table content before loading
+        tableBody.html("");
+
+        disablePageNumLinks();
+
+        d3.select("#page-num-li-1").classed("active", false);
+        d3.select("#page-num-li-2").classed("active", false);
+        d3.select("#page-num-li-3").classed("active", false);
+        d3.select("#page-num-li-4").classed("active", true);
+        d3.select("#page-num-li-5").classed("active", false);
+
+        var pageNum = d3.select(this).text();
+        fetchPageData(pageNum);
+
+        enablePageNumLinks();
+    }
+});
+
+// page number link event handler
+d3.select("#page-num-link-5").on("click", function() {
+    d3.event.preventDefault();
+    if (d3.select("#page-num-li-5").classed("active") == false) {
+        // display a message to the user
+        fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+        // clear table content before loading
+        tableBody.html("");
+
+        disablePageNumLinks();
+
+        d3.select("#page-num-li-1").classed("active", false);
+        d3.select("#page-num-li-2").classed("active", false);
+        d3.select("#page-num-li-3").classed("active", false);
+        d3.select("#page-num-li-4").classed("active", false);
+        d3.select("#page-num-li-5").classed("active", true);
+
+        var pageNum = d3.select(this).text();
+        fetchPageData(pageNum);
+
+        enablePageNumLinks();
+    }
+});
