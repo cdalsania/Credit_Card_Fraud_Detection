@@ -51,6 +51,10 @@ def predictions():
 def conclusions():
     return render_template('conclusions.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 ###############################################
 # Run the Flask Application
 ###############################################
