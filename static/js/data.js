@@ -69,3 +69,11 @@ function onPrevClicked() {
 function onNextClicked() {
     d3.event.preventDefault();
 }
+
+var currPrevLiDisabledVal;
+var currNextLiDisabledVal;
+var currLi1DisabledVal;
+var currLi2DisabledVal;
+var currLi3DisabledVal;
+var currLi4DisabledVal;
+var currLi5DisabledVal;
