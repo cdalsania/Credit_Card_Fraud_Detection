@@ -77,3 +77,21 @@ var currLi2DisabledVal;
 var currLi3DisabledVal;
 var currLi4DisabledVal;
 var currLi5DisabledVal;
+
+// disable page number links
+function disablePageNumLinks() {
+    currPrevLiDisabledVal = d3.select('#prevButtonLi').classed('disabled');
+    currNextLiDisabledVal = d3.select('#nextButtonLi').classed('disabled');
+    currLi1DisabledVal = d3.select("#page-num-li-1").classed('disabled');
+    currLi2DisabledVal = d3.select("#page-num-li-2").classed('disabled');
+    currLi3DisabledVal = d3.select("#page-num-li-3").classed('disabled');
+    currLi4DisabledVal = d3.select("#page-num-li-4").classed('disabled');
+    currLi5DisabledVal = d3.select("#page-num-li-5").classed('disabled');
+    d3.select('#prevButtonLi').classed('disabled', true);
+    d3.select('#nextButtonLi').classed('disabled', true);
+    d3.select("#page-num-li-1").classed('disabled', true);
+    d3.select("#page-num-li-2").classed('disabled', true);
+    d3.select("#page-num-li-3").classed('disabled', true);
+    d3.select("#page-num-li-4").classed('disabled', true);
+    d3.select("#page-num-li-5").classed('disabled', true);
+}
