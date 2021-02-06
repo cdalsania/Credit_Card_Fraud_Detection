@@ -41,3 +41,15 @@
     color: #656565;
     text-align: center;
 }
+
+
+/* Styling for special jumbotron and elements in it */
+
+h1,
+.jumbo p {
+    color: rgb(67, 108, 152);
+}
+
+.jumbo {
+    background-color: rgb(191, 208, 227);
+}
