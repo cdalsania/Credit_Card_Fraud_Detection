@@ -5,3 +5,39 @@
     color: white;
     filter: invert(100) sepia(100) saturate(27) hue-rotate(264deg) brightness(96) contrast(102);
 }
+
+
+/* Styling for image bar */
+
+.image-bar {
+    background-color: rgba(238, 238, 238);
+}
+
+.image-div {
+    position: relative;
+    width: 100%;
+    height: -webkit-fill-available;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div::before {
+    content: "";
+    background-image: url(/static/images/credit_card_images.png);
+    background-repeat: repeat;
+    background-position-x: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.project-title {
+    position: relative;
+    color: #656565;
+    text-align: center;
+}
