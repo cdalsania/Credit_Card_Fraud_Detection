@@ -59,3 +59,8 @@ function fetchPageData(pageNum) {
         fetching.text("");
     });
 }
+
+// fetch prev page data
+function onPrevClicked() {
+    d3.event.preventDefault();
+}
