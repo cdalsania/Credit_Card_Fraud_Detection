@@ -50,3 +50,12 @@ function loadTableData(dataArray) {
         row.append("td").text(data["Class"]);
     });
 };
+
+// fetch page data
+function fetchPageData(pageNum) {
+    d3.json(`/fetchpagedata/${pageNum}`).then(data => {
+        // load table data
+        loadTableData(data);
+        fetching.text("");
+    });
+}
