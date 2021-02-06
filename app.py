@@ -17,3 +17,12 @@ import pandas as pd
 app = Flask(__name__)
 
 csv_file_path = environ.get('CSV_FILE_PATH') or CSV_FILE_URL
+
+###############################################
+# Flask Routes
+###############################################
+
+# Routes that will render html templates
+@app.route('/')
+def index():
+    return render_template('index.html')
