@@ -39,6 +39,10 @@ def footer():
 def data():
     return render_template('data.html')
 
+@app.route('/research')
+def research():
+    return render_template('research.html')
+
 ###############################################
 # Run the Flask Application
 ###############################################
