@@ -237,3 +237,17 @@ d3.select("#page-num-link-5").on("click", function() {
         enablePageNumLinks();
     }
 });
+
+/***************************************************
+LOAD TABLE DATA - ON PAGE LOAD
+****************************************************/
+
+// display a message to the user
+fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+disablePageNumLinks();
+
+// fetch page 1 data
+fetchPageData(1);
+
+enablePageNumLinks();
