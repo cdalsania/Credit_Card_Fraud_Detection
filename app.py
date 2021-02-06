@@ -47,6 +47,10 @@ def research():
 def predictions():
     return render_template('predictions.html')
 
+@app.route('/conclusions')
+def conclusions():
+    return render_template('conclusions.html')
+
 ###############################################
 # Run the Flask Application
 ###############################################
