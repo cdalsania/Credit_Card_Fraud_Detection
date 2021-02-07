@@ -232,6 +232,7 @@ d3.select("#nextButton").on("click", onNextClicked);
 // page number link event handler
 d3.select("#page-num-link-1").on("click", function() {
     d3.event.preventDefault();
+    d3.select("#nextButtonLi").classed("disabled", false);
     if (d3.select("#page-num-li-1").classed("active") == false) {
         // display a message to the user
         fetching.style("text-align", "center").text("Fetching Data - Please wait...");
@@ -262,6 +263,7 @@ d3.select("#page-num-link-1").on("click", function() {
 d3.select("#page-num-link-2").on("click", function() {
     d3.event.preventDefault();
     d3.select("#prevButtonLi").classed("disabled", false);
+    d3.select("#nextButtonLi").classed("disabled", false);
     if (d3.select("#page-num-li-2").classed("active") == false) {
         // display a message to the user
         fetching.style("text-align", "center").text("Fetching Data - Please wait...");
@@ -288,6 +290,7 @@ d3.select("#page-num-link-2").on("click", function() {
 d3.select("#page-num-link-3").on("click", function() {
     d3.event.preventDefault();
     d3.select("#prevButtonLi").classed("disabled", false);
+    d3.select("#nextButtonLi").classed("disabled", false);
     if (d3.select("#page-num-li-3").classed("active") == false) {
         // display a message to the user
         fetching.style("text-align", "center").text("Fetching Data - Please wait...");
@@ -314,6 +317,7 @@ d3.select("#page-num-link-3").on("click", function() {
 d3.select("#page-num-link-4").on("click", function() {
     d3.event.preventDefault();
     d3.select("#prevButtonLi").classed("disabled", false);
+    d3.select("#nextButtonLi").classed("disabled", false);
     if (d3.select("#page-num-li-4").classed("active") == false) {
         // display a message to the user
         fetching.style("text-align", "center").text("Fetching Data - Please wait...");
@@ -346,6 +350,11 @@ d3.select("#page-num-link-5").on("click", function() {
 
         // clear table content before loading
         tableBody.html("");
+
+        var pageNum = d3.select(this).text();
+        if (parseInt(pageNum) == 2849) {
+            d3.select("#nextButtonLi").classed("disabled", true);
+        }
 
         disablePageNumLinks();
 
