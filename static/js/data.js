@@ -63,6 +63,64 @@ function fetchPageData(pageNum) {
 // fetch prev page data
 function onPrevClicked() {
     d3.event.preventDefault();
+
+    var allPageItems = d3.selectAll(".page-item");
+    var currActiveLinkId;
+    var currActiveLinkNum;
+    var currActivePageNum;
+    allPageItems.each(function(pageItem, index) {
+        if (d3.select(this).classed("active") == true) {
+            currActiveLinkId = d3.select(this).attr('id');
+            currActiveLinkNum = parseInt(currActiveLinkId.substr(12, 1));
+            currActivePageNum = parseInt(d3.select(this).text());
+        }
+    });
+    d3.select("#nextButtonLi").classed("disabled", false);
+    if (currActiveLinkNum > 1) {
+        nextActiveLinkId = "#page-num-li-" + (currActiveLinkNum - 1);
+        d3.select("#page-num-li-1").classed("active", false);
+        d3.select("#page-num-li-2").classed("active", false);
+        d3.select("#page-num-li-3").classed("active", false);
+        d3.select("#page-num-li-4").classed("active", false);
+        d3.select("#page-num-li-5").classed("active", false);
+
+        d3.select(nextActiveLinkId).classed("active", true);
+
+        // display a message to the user
+        fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+        // clear table content before loading
+        tableBody.html("");
+
+        disablePageNumLinks();
+
+        fetchPageData(currActivePageNum - 1);
+
+        enablePageNumLinks();
+
+    } else if (currActiveLinkNum == 1) {
+        if (currActivePageNum > 1) {
+            d3.select("#page-num-link-1").text(currActivePageNum - 1);
+            d3.select("#page-num-link-2").text(currActivePageNum);
+            d3.select("#page-num-link-3").text(currActivePageNum + 1);
+            d3.select("#page-num-link-4").text(currActivePageNum + 2);
+            d3.select("#page-num-link-5").text(currActivePageNum + 3);
+            if (currActivePageNum == 2) {
+                d3.select("#prevButtonLi").classed("disabled", true);
+            }
+            // display a message to the user
+            fetching.style("text-align", "center").text("Fetching Data - Please wait...");
+
+            // clear table content before loading
+            tableBody.html("");
+
+            disablePageNumLinks();
+
+            fetchPageData(currActivePageNum - 1);
+
+            enablePageNumLinks();
+        }
+    }
 }
 
 // fetch next page data
