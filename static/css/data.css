@@ -10,3 +10,8 @@
     justify-content: center;
     align-items: center;
 }
+
+.table td,
+.table th {
+    padding: .2rem;
+}
