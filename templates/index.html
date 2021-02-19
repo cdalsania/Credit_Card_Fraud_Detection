@@ -24,20 +24,68 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="jumbotron jumbo">
-                        <h1>Objective</h1>
-                        <p class="lead text-justify "> Our goal as researchers is to focus on detecting
-                            fraudulent behaviors early using advanced machine learning techniques. Though credit card
-                            fraud detection is not a straightforward task mainly because one being the fraudulent
-                            behaviors, which differ for each transaction attempt, and the dataset being imbalanced</p>
+                    <div class="card text-white bg-primary mb-4">
+                        <div class="card-body">
+                            <h1 class="card-title">Overview</h1>
+                            <p class="card-text text-justify">This project involves investigating credit card transaction data to develop a machine learning model that will provide the best results in revealing and preventing fraudulent credit card transactions. Our team tried various
+                                machine learning classification models on the transaction data to determine the best model that would flag suspicious activity more accurately.</p>
+                        </div>
                     </div>
-                    <p class="text-justify ">Credit card fraud is the fastest-growing problem in day to day of
-                        the financial market. There has been an accelerated increase in the rate of fraudulent
-                        activities in recent years, especially during the COVID time, causing large financial losses
-                        to many organizations, companies, and government agencies. The fraudulent transaction
-                        numbers are assumed to rise in the future.</p>
+                    <p class="text-justify">Have you ever pulled up your credit card statement to see transactions you never performed? Or Have you ever used your credit card in a store only to have it declined? One cause for these is that the bank's fraud-detecting technologies
+                        have missed to flag suspicious activity or incorrectly flagged a genuine transaction as suspicious.</p>
+                    <p class="text-justify">Credit card fraud is the fastest-growing problem today in the financial market. There has been an accelerated increase in the rate of fraudulent activities in recent years, especially during the COVID time, causing enormous financial
+                        losses to many organizations, companies, and government agencies. The fraudulent transaction numbers are assumed to rise in the future.</p>
+                    <p class="text-justify">According to The Nilson Report, fraud losses worldwide reached $27.85 billion in 2018 and are projected to rise to $35.67 billion in five years and $40.63 billion in 10 years. Recent trends show a steep rise in credit card fraud, which
+                        can be costly to consumers, taxpayers, banks, and payment networks that issue refunds to consumers alike.</p>
                     <div class="text-center">
-                        <img src="../static/images/Identity_Theft_Report_Types_Plot.png " class="img-thumbnail " />
+                        <img src="https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/1_212g4034/def_height/750/def_width/600/version/100011/type/1" class="img-thumbnail img-fluid" style="width:400px;height:475px;" />
+                    </div>
+                    <p class="text-justify mt-5">According to FTC reports, Credit card fraud tops the identity theft reports from Q2 2017 until Q3 2020. Reports of credit card fraud increased by 107% from Q1 2019 to Q4 2020, Reports of credit card fraud increased by 107% from Q1
+                        2019 to Q4 2020, increasing by only 28% from Q1 2017 to Q1 2019. This rapid spike in 2020 could be because of the new digital normal and boom in online shopping patterns in customers using credit card payments for grocery shopping
+                        and deliveries brought in by the COVID-19 pandemic.
+                    </p>
+                    <div class="text-center">
+                        <div class='tableauPlaceholder' id='viz1612922877099' style='position: relative'><noscript><a
+                                    href='#'><img alt=' '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;IdentityTheftReports_16125766657800&#47;TheftTypesOverTime&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='IdentityTheftReports_16125766657800&#47;TheftTypesOverTime' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Id&#47;IdentityTheftReports_16125766657800&#47;TheftTypesOverTime&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object></div>
+                        <script type='text/javascript'>
+                            var divElement = document.getElementById('viz1612922877099');
+                            var vizElement = divElement.getElementsByTagName('object')[0];
+                            vizElement.style.width = '1100px';
+                            vizElement.style.height = '877px';
+                            var scriptElement = document.createElement('script');
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                        </script>
+                    </div>
+                    <p class="text-justify mt-5">Credit card fraud has skyrocketed in the last few years, and data analysts have been striving to develop machine learning models that could detect and classify suspicious activities from genuine ones more accurately. To come up with
+                        a precise machine learning model for credit card fraud detection has several challenges. Due to the Data Privacy of sensitive payment data, which contains private information about customers and businesses, access to such data
+                        is highly restricted, making it very difficult to find a publicly available real-world data set. We could only find a dataset released on the <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">Kaggle website</a> with 284807
+                        transactions, a tiny sliver of data that would sufficiently reflect the magnitude and variety of real-world card payments. This dataset is highly imbalanced, with many genuine credit card transactions compared to the fraudulent
+                        ones. Another challenge is the difficulty in detecting fraudulent transactions from genuine ones in the dataset as data is highly skewed.</p>
+
+                    <div class="card text-white bg-primary mb-5 mt-5 ">
+                        <div class="card-body">
+                            <h1 class="card-title">Objective</h1>
+                            <p class="card-text text-justify">Our goal as researchers is to focus on detecting fraudulent behaviors early using advanced machine learning techniques. Though credit card fraud detection is not a straightforward task mainly because one being the fraudulent
+                                behaviors, which differ for each transaction attempt, and the dataset being imbalanced.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,18 +95,10 @@
     </div>
 
     <!-- Scripts for JQuery, Bootstrap and D3.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

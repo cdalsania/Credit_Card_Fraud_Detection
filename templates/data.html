@@ -25,16 +25,20 @@
         <div id="nav-placeholder" pagename="#data-li"></div>
         <!-- Main Page Content -->
         <div class="container p-0">
-            <div class="row">
-                <div class="col-12">
+            <div class="row mb-5">
+                <div class="col-lg-8 pr-0">
                     <div class="card bg-light">
-                        <h2 class="card-header">Data - Predictions</h2>
-                        <p class="p-3">The following table includes all of the data used for predictions during this project.</p>
-                        <h1 id="fetching"></h1>
+                        <h4 class="card-header">Data</h4>
                         <div class="card-body">
+                            <p class="text-justify">Due to the Data Privacy of sensitive payment data, which contains private information about customers and businesses, access to such data is highly restricted, making it very difficult to find a publicly available real-world
+                                data set. We were only able to find a dataset released on the <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">Kaggle website</a> with 284807 transactions, a tiny sliver of data that would sufficiently reflect the
+                                magnitude and variety of real-world card payments.</p>
+                            <p class="text-justify">Data from <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">Kaggle website</a> was uploaded to AWS S3 Cloud Storage for further analysis and prediction models.</p>
+                            <p class="text-justify">The following table includes all of the data used for predictions during this project.</p>
+                            <h1 id="fetching"></h1>
                             <div class='row bg-light'>
                                 <div class='col'>
-                                    <div class='table-responsive' style='width:100%;height:250px; overflow-x:auto; overflow-y: auto;'>
+                                    <div class='table-responsive' style='width:100%;height:400px; overflow-x:auto; overflow-y: auto;'>
                                         <table class="table table-striped">
                                             <thead>
                                                 <tr>
@@ -80,7 +84,7 @@
                             <div class="row bg-light pt-2">
                                 <div class="col">
                                     <div class="flex-container">
-                                        <ul class="pagination pagination-lg mb-0">
+                                        <ul class="pagination mb-0">
                                             <li class="page-item disabled" id="prevButtonLi">
                                                 <a class="page-link" id="prevButton" href="#">&laquo;</a>
                                             </li>
@@ -109,32 +113,59 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card bg-light mt-4">
-                        <h2 class="card-header">Data Sources</h2>
-                        <div class="card-body">
-                        </div>
-                    </div>
-                    <div class="card bg-light mt-4 mb-5">
-                        <h2 class="card-header">ETL Process</h2>
-                        <div class="card-body">
+                <div class="col-lg-4">
+                    <div class="card bg-light">
+                        <h4 class="card-header">Languages and Tools</h4>
+                        <div class="card-body p-0 pt-3">
+                            <ul>
+                                <li>Jupyter Notebook</li>
+                                <li>Python</li>
+                                <ul>
+                                    <li>Pandas</li>
+                                    <li>Matplotlib</li>
+                                    <li>seaborn</li>
+                                    <li>Scikit-Learn</li>
+                                    <ul>
+                                        <li>LogisticRegression</li>
+                                        <li>RandomForestClassifier</li>
+                                        <li>MultinomialNB</li>
+                                        <li>GaussianNB</li>
+                                        <li>BernoulliNB</li>
+                                        <li>DecisionTreeClassifier</li>
+                                        <li>AdaBoostClassifier</li>
+                                        <li>GradientBoostingClassifier</li>
+                                        <li>Tensorflow Keras</li>
+                                        <li>Support Vector Machine SVC</li>
+                                        <li>Near Miss Undersampling</li>
+                                        <li>CNN Undersampling</li>
+                                        <li>SMOTE Oversampling</li>
+                                        <li>GridSearchCV</li>
+                                    </ul>
+                                </ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <ul>
+                                    <li>Bootstrap</li>
+                                    <li>Bootswatch</li>
+                                </ul>
+                                <li>JavaScript</li>
+                                <ul>
+                                    <li>D3.js</li>
+                                    <li>Plotly.js</li>
+                                    <li>JQuery</li>
+                                </ul>
+                                <li>AWS S3 Cloud Storage</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card bg-light mt-4 mb-5">
-                        <h2 class="card-header">Languages and Tools Used</h2>
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <!-- Footer -->
             <div id="footer-placeholder"></div>
         </div>
     </div>
+
     <!-- Scripts for JQuery, Bootstrap and D3.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -150,6 +181,7 @@
 
     <!-- Script for current page -->
     <script src="{{ url_for('static', filename='js/data.js') }}"></script>
+
 </body>
 
 </html>
