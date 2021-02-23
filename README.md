@@ -68,4 +68,4 @@ It could be seen from the below plot that the number of genuine transactions dur
 ## Transaction Amount
 It is evident from the below boxplots that median and maximum transaction amount for fraudulent transactions were low compared to genuine transactions.
 
-![Transaction Amount](static/images/predictions_page_images/data_exploration_3.png)
+![Transaction Amount 1](static/images/predictions_page_images/data_exploration_3.png)![Transaction Amount 2](static/images/predictions_page_images/data_exploration_4.png)
