@@ -54,3 +54,8 @@ Data from Kaggle website was uploaded to AWS S3 Cloud Storage for further analys
 * Feature 'Time' holds the seconds elapsed between each transaction and the first transaction in the dataset.
 
 * Feature 'Class' is the target variable that takes value 1 in fraudulent transactions and 0 otherwise.
+
+## Data Imbalance 
+It is evident from the below plot that data is highly imbalanced. The dataset has only 492 fraudulent transactions out of a total of 284,807 transactions, which is a mere 0.17%.
+
+![Data Imbalance](static/images/predictions_page_images/data_exploration_1.png)
