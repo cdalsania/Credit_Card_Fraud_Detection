@@ -81,3 +81,8 @@ We could observe from the below correlation matrix that there is no correlation 
 ![Feature Correlation Matrix](static/images/predictions_page_images/data_exploration_5.png)
 ****
 # Predictive Models
+
+## Process Flow
+
+Here is the process flow that we followed for most of the predictive models we used in this project.
+![Process Flow](static/images/ML_Model_Flow_Chart.png)
