@@ -19,8 +19,6 @@
   * [Predictive models](#predictive-models)
   * [Undersampling](#undersampling)
   * [Oversampling](#oversampling)
-  * [Model Comparison](#model-comparison)
-  * [Best Model](#best-model)
 * [Conclusion](#conclusion)
 * [Future enhancements](#Take-away-and-future-direction)
 * [Lessons Learned](#lessons-learned)
@@ -108,7 +106,7 @@ To handle the highly imbalanced dataset, we tried undersampling methods. Undersa
 
 We tried two different undersampling methods, the Near Miss and the Condensed nearest neighbor rule. 
 
-### Near Miss Undersampling Method
+#### Near Miss Undersampling Method
 
 | Model	                 | Precision Score      | Recall Score        |
 | ---------------------- | -------------------- | ------------------- |
@@ -122,7 +120,7 @@ We tried two different undersampling methods, the Near Miss and the Condensed ne
 | Ada Boost              | 0.0017362152624614028| 1.0                 |
 | SVM                    | 0.0017277282831226932| 1.0                 |
 
-### Condensed Nearest Neighbor Rule Undersampling Method
+#### Condensed Nearest Neighbor Rule Undersampling Method
 | Model	                 | Precision Score      | Recall Score        |
 | ---------------------- | -------------------- | ------------------- |
 | LogisticRegression     | 0.004377299668304    | 0.9817073170731707  |
@@ -136,3 +134,34 @@ We tried two different undersampling methods, the Near Miss and the Condensed ne
 | SVM                    | 0.0017326994189117801| 1.0                 |
 
 When we evaluated the models trained with undersampled datasets against the original dataset, though the recall scores were 100% in most cases, the precision scores were almost closer to zero, meaning the models classified almost all transactions as fraudulent. So, undersampling methods did not prove to be a good option for our dataset.
+
+## Oversampling
+
+To handle the highly imbalanced dataset, we next tried Oversampling method. Oversampling makes new copies of the minority class, which is the fraudulent transactions in our case, and gives us a dataset with an equal number of genuine and fraudulent transactions.
+
+#### Synthetic Minority Oversampling Technique (SMOTE)
+We tried SMOTE Oversampling method on four predictive models - RandomForest, DecisionTree, AdaBoost and GradientBoosting Classifiers. The table below shows the recall and precision scores for each model trained with oversampled data using SMOTE method and evaluated against the original dataset.
+
+| Model	                 | Precision Score      | Recall Score        |
+| ---------------------- | -------------------- | ------------------- |
+| RandomForest           | 0.9312977099236641   | 0.991869918699187   |
+| DecisionTree           | 0.5804878048780487   | 0.967479674796748   |
+| Gradient Boost         | 0.23156266116554924  | 0.9126016260162602  |
+| Ada Boost              | 0.192090395480226    | 0.8983739837398373  |
+
+We could see from the above table that the Random Forest model, trained with oversampled data using SMOTE method, had the best performance against the original dataset.
+
+#### Random Forest with SMOTE oversampling
+
+We could see from the below confusion matrix that only 4 fraudulent transactions were incorrectly classified as non-fraudulent and only 36 out of 284,315 genuine transactions were incorrectly classified as fraudulent.
+
+![Precision Recall Curve](static/images/predictions_page_images/SMOTE_PRC.png)![Confusion Matrix](static/images/predictions_page_images/SMOTE_CM.png)
+
+****
+# Conclusion
+Fraud detection is challenging to implement in real life because it requires cooperation from banks and other companies that are unwilling to share information due to their market competition and legal requirements in protecting user data.
+
+While we enjoyed working on this project, we could not obtain the goal of 100% in fraud detection, so we got as close as we could with a model we created to get close to our goal with enough time and data. Our project integrates multiple models and their results to increase the final result's accuracy. We trained and evaluated only four predictive models on oversampled SMOTE dataset. Again, we could try training more predictive models on oversampled SMOTE datasets and further improve their performance using Grid Search to tune the model's hyperparameters.
+
+Machine Learning analysis faces challenges such as 1) class imbalance; many valid transactions far outnumber fraudulent ones. 2) Also, transaction patterns often change their statistical properties over time. 3) Finally, the algorithms' precision increases when the dataset's size is large. Hence, more data will make the model more accurate in detecting frauds and reducing false positives. However, this requires official support from the companies themselves and users whose data should be protected.
+
