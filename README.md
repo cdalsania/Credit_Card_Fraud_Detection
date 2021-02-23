@@ -69,3 +69,13 @@ It could be seen from the below plot that the number of genuine transactions dur
 It is evident from the below boxplots that median and maximum transaction amount for fraudulent transactions were low compared to genuine transactions.
 
 ![Transaction Amount 1](static/images/predictions_page_images/data_exploration_3.png)![Transaction Amount 2](static/images/predictions_page_images/data_exploration_4.png)
+
+## Feature Correlation Matrix
+We could observe from the below correlation matrix that there is no correlation between features V1-V28 and there are direct and inverse correlations between the following features:
+
+|                     | Time        | Amount         | Class                           |
+| ------------------- | ----------- | -------------- | ------------------------------- |
+| Inverse Correlation | V3, V11, V25| V2, V5, V1, V3 | V17, V14, V12, V10, V7, V3, V16 |
+| Direct Correlation  | V5, V22     | V7, V20        | V4, V11                         |
+
+![Feature Correlation Matrix](static/images/predictions_page_images/data_exploration_5.png)
