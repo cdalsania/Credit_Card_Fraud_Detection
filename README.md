@@ -42,3 +42,15 @@ According to [FTC reports](https://www.ftc.gov/system/files/documents/reports/co
 ## Objective
 Our goal as researchers is to focus on detecting fraudulent behaviors early using advanced machine learning techniques. Though credit card fraud detection is not a straightforward task mainly because one being the fraudulent behaviors, which differ for each transaction attempt, and the dataset being imbalanced. 
 ****   
+# Data Exploration
+
+## Data
+Due to the Data Privacy of sensitive payment data, which contains private information about customers and businesses, access to such data is highly restricted, making it very difficult to find a publicly available real-world data set. We were only able to find a dataset released on the [Kaggle website](https://www.kaggle.com/mlg-ulb/creditcardfraud) with 284807 transactions, a tiny sliver of data.
+
+Data from Kaggle website was uploaded to AWS S3 Cloud Storage for further analysis and prediction models. This dataset contains credit card transactions performed in 2 days in September 2013 by European cardholders.
+
+* There are 30 features out of which 28 features (V1, V2, ... V28) are numerical input variables resulting from a PCA transformation. The other two features, 'Amount' and 'Time,' are not PCA transformed.
+
+* Feature 'Time' holds the seconds elapsed between each transaction and the first transaction in the dataset.
+
+* Feature 'Class' is the target variable that takes value 1 in fraudulent transactions and 0 otherwise.
