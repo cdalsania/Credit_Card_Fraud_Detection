@@ -168,3 +168,11 @@ Machine Learning analysis faces challenges such as 1) class imbalance; many vali
 # Future Enhancements
 While we could not reach out the goal of 100% accuracy in fraud detection, we created a model that can get very close to that goal with enough time and data. As with any such project, there is room for improvement. This project's very nature allows integrating multiple models and their results to increase the final result's accuracy. As part of this project, we trained and evaluated only four predictive models on oversampled SMOTE dataset. We could try training more predictive models on oversampled SMOTE datasets and further improve their performance using Grid Search to tune the model's hyperparameters. Also, the models' performance increases when the size of the dataset increases. So having more data will make the model more accurate in detecting frauds and reduce the number of false negatives.
 
+****
+# Lessons Learned
+
+* We did not know initially that AWS S3 Cloud Server had Data Transfer monthly usage limits. While we were working on the pagination in the Data page, we accessed the data many times and ended up exceeding the monthly data transfer usage limit. We are now keeping a check on the data transfer usage and also try to limit the access.
+
+* While we were trying to improve the model's performance using Hyperparameter tuning, a few parameters in specific models were causing the tuning process to take way too long to execute. Due to time constraints, we had to figure out which parameters were causing the delay in the Hyperparameter tuning process and eliminate them to speed up the process.
+
+* We learned how to handle imbalanced datasets using Undersampling and Oversampling methods.
