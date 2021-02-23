@@ -215,22 +215,22 @@ The following is a list of the required languages, modules, and libraries that w
 ***
 # Collaborators 
 <a href="https://github.com/cdalsania">
-  <img src="static/images/collaborators/Crystal.png" width="100px" height="100px" border-radius="20px">
+  <img src="static/images/collaborators/Crystal.png" width="100px" height="100px" style="border-radius:20px">
 </a>
 <a href="https://github.com/JayyMaurice2020">
-  <img src="static/images/collaborators/Jamel.png" width="100px" height="100px" border-radius="20px">
+  <img src="static/images/collaborators/Jamel.png" width="100px" height="100px" style="border-radius:20px">
 </a>
 <a href="https://github.com/jklinges">
-  <img src="static/images/collaborators/John.png" width="100px" height="100px" border-radius="20px">
+  <img src="static/images/collaborators/John.png" width="100px" height="100px" style="border-radius:20px">
 </a>
 <a href="https://github.com/nmburns">
-  <img src="static/images/collaborators/Nick.png" width="100px" height="100px" border-radius="20px">
+  <img src="static/images/collaborators/Nick.png" width="100px" height="100px" style="border-radius:20px">
 </a>
 <a href="https://github.com/Prarthna-design">
-  <img src="static/images/collaborators/Prarthna.png" width="100px" height="100px" border-radius="20px">
+  <img src="static/images/collaborators/Prarthna.png" width="100px" height="100px" style="border-radius:20px">
 </a>
 <a href="https://github.com/ushaakumaar">
-  <img src="static/images/collaborators/Usha.png" width="100px" height="100px" border-radius="20px">
+  <img src="static/images/collaborators/Usha.png" width="100px" height="100px" style="border-radius:20px">
 </a>
 
 - - -
