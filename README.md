@@ -79,3 +79,5 @@ We could observe from the below correlation matrix that there is no correlation 
 | Direct Correlation  | V5, V22     | V7, V20        | V4, V11                         |
 
 ![Feature Correlation Matrix](static/images/predictions_page_images/data_exploration_5.png)
+****
+# Predictive Models
