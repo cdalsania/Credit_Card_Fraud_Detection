@@ -211,3 +211,29 @@ The following is a list of the required languages, modules, and libraries that w
     * Plotly.js
     * JQuery
 * AWS S3 Cloud Storage
+
+***
+# Collaborators 
+<a href="https://github.com/cdalsania">
+  <img src="static/images/collaborators/Crystal.png" style="width:100px;height:100px;border-radius:20px;">
+</a>
+<a href="https://github.com/JayyMaurice2020">
+  <img src="static/images/collaborators/Jamel.png" style="width:100px;height:100px;border-radius:20px;">
+</a>
+<a href="https://github.com/jklinges">
+  <img src="static/images/collaborators/John.png" style="width:100px;height:100px;border-radius:20px;">
+</a>
+<a href="https://github.com/nmburns">
+  <img src="static/images/collaborators/Nick.png" style="width:100px;height:100px;border-radius:20px;">
+</a>
+<a href="https://github.com/Prarthna-design">
+  <img src="static/images/collaborators/Prarthna.png" style="width:100px;height:100px;border-radius:20px;">
+</a>
+<a href="https://github.com/ushaakumaar">
+  <img src="static/images/collaborators/Usha.png" style="width:100px;height:100px;border-radius:20px;">
+</a>
+
+- - -
+### Copyright
+
+Credit Card Fraud Detection © 2021. All Rights Reserved.
