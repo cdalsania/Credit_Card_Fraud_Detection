@@ -176,3 +176,38 @@ While we could not reach out the goal of 100% accuracy in fraud detection, we cr
 * While we were trying to improve the model's performance using Hyperparameter tuning, a few parameters in specific models were causing the tuning process to take way too long to execute. Due to time constraints, we had to figure out which parameters were causing the delay in the Hyperparameter tuning process and eliminate them to speed up the process.
 
 * We learned how to handle imbalanced datasets using Undersampling and Oversampling methods.
+
+***
+# Requirements
+## Languages And Libraries
+The following is a list of the required languages, modules, and libraries that we used.
+
+* Jupyter Notebook
+* Python
+    * Pandas
+    * Matplotlib
+    * seaborn
+    * Scikit-Learn
+        * LogisticRegression
+        * RandomForestClassifier
+        * MultinomialNB
+        * GaussianNB
+        * BernoulliNB
+        * DecisionTreeClassifier
+        * AdaBoostClassifier
+        * GradientBoostingClassifier
+        * Tensorflow Keras
+        * Support Vector Machine SVC
+        * Near Miss Undersampling
+        * CNN Undersampling
+        * SMOTE Oversampling
+        * GridSearchCV
+* HTML
+* CSS
+    * Bootstrap
+    * Bootswatch
+* JavaScript
+    * D3.js
+    * Plotly.js
+    * JQuery
+* AWS S3 Cloud Storage
