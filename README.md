@@ -4,3 +4,27 @@
 
 
 ![app](static/images/ImageBar.png)
+
+# Table of Contents
+
+* [Project Description](#project-description)
+* [Data Exploration](#data-exploration)
+  * [Data](#data)
+  * [Data Imbalance](#data-imbalance)
+  * [Transactions Over Time](#transactions-over-time)
+  * [Transaction Amount](#transaction-amount)
+  * [Feature Correlation Matrix](#feature-correlation-matrix)
+* [Predictive Models](#predictive-models)
+  * [Process Flow](#process-flow)
+  * [Predictive models](#predictive-models)
+  * [Undersampling](#undersampling)
+  * [Oversampling](#oversampling)
+  * [Model Comparison](#model-comparison)
+  * [Best Model](#best-model)
+* [Conclusion](#conclusion)
+* [Future enhancements](#Take-away-and-future-direction)
+* [Lessons Learned](#lessons-learned)
+* [Requirements](#requirements)  
+  * [Languages And Libraries](#languages-and-libraries)
+* [Collaborators](#collaborators)
+***
