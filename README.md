@@ -59,3 +59,8 @@ Data from Kaggle website was uploaded to AWS S3 Cloud Storage for further analys
 It is evident from the below plot that data is highly imbalanced. The dataset has only 492 fraudulent transactions out of a total of 284,807 transactions, which is a mere 0.17%.
 
 ![Data Imbalance](static/images/predictions_page_images/data_exploration_1.png)
+
+## Transactions Over Time
+It could be seen from the below plot that the number of genuine transactions during nighttime in European Timezone had been too low while the fraudulent transactions were uniformly distributed even through the nighttime.
+
+![Transactions Over Time](static/images/predictions_page_images/data_exploration_2.png)
