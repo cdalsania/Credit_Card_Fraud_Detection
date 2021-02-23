@@ -101,3 +101,38 @@ We tried various predictive models against the dataset and the table below shows
 | NeuralNetwork         | 0.762295         | 0.823009       |
 | DeepNeuralNetwork     | 0.851485         | 0.761062       |
 | SVM                   | 0.764705882      | 0.805309735    |
+
+## Undersampling
+
+To handle the highly imbalanced dataset, we tried undersampling methods. Undersampling methods pick small samples from the majority class, which is the genuine transactions in our case and gives us a dataset with equal number of genuine and fraudulent transactions.
+
+We tried two different undersampling methods, the Near Miss and the Condensed nearest neighbor rule. 
+
+### Near Miss Undersampling Method
+
+| Model	                 | Precision Score      | Recall Score        |
+| ---------------------- | -------------------- | ------------------- |
+| LogisticRegression     | 0.001727588749604972 | 1.0                 |
+| RandomForest           | 0.001727485630620034 | 1.0                 |
+| Multinomial NaiveBayes | 0.0017909404621500023| 1.0                 |
+| Gaussian Naive Bayes   | 0.001727485630620034 | 1.0                 |
+| Bernoulli Naive Bayes  | 0.018458197611292075 | 0.06910569105691057 |
+| DecisionTree           | 0.0017297935849972048| 1.0                 |
+| Gradient Boost         | 0.0017279103172401198| 1.0                 |
+| Ada Boost              | 0.0017362152624614028| 1.0                 |
+| SVM                    | 0.0017277282831226932| 1.0                 |
+
+### Condensed Nearest Neighbor Rule Undersampling Method
+| Model	                 | Precision Score      | Recall Score        |
+| ---------------------- | -------------------- | ------------------- |
+| LogisticRegression     | 0.004377299668304    | 0.9817073170731707  |
+| RandomForest           | 0.001775519483800189 | 1.0                 |
+| Multinomial NaiveBayes | 0.0                  | 0.0                 |
+| Gaussian Naive Bayes   | 0.001727485630620034 | 1.0                 |
+| Bernoulli Naive Bayes  | 0.5714285714285714   | 0.016260162601626018|
+| DecisionTree           | 0.002820509662401005 | 0.9308943089430894  |
+| Gradient Boost         | 0.002350038188120557 | 0.975609756097561   |
+| Ada Boost              | 0.0031783182839740945| 0.9715447154471545  |
+| SVM                    | 0.0017326994189117801| 1.0                 |
+
+When we evaluated the models trained with undersampled datasets against the original dataset, though the recall scores were 100% in most cases, the precision scores were almost closer to zero, meaning the models classified almost all transactions as fraudulent. So, undersampling methods did not prove to be a good option for our dataset.
