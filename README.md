@@ -86,3 +86,18 @@ We could observe from the below correlation matrix that there is no correlation 
 
 Here is the process flow that we followed for most of the predictive models we used in this project.
 ![Process Flow](static/images/predictions_page_images/ML_Model_Flow_Chart.png)
+
+## Predictive models
+
+We tried various predictive models against the dataset and the table below shows the recall and precision scores for each model: 
+
+| Model	                | Precision Score  | Recall Score   |
+| --------------------- | ---------------- | -------------- |
+| LogisticRegression    | 0.8375           | 0.592920354    |
+| RandomForest          | 0.927083333      | 0.787610619    |
+| MultinomialNaiveBayes | 0.733944954      | 0.707964602    |
+| DecisionTree          | 0.881188119      | 0.787610619    |
+| AdaBoost              | 0.862745098      | 0.778761062    |
+| NeuralNetwork         | 0.762295         | 0.823009       |
+| DeepNeuralNetwork     | 0.851485         | 0.761062       |
+| SVM                   | 0.764705882      | 0.805309735    |
