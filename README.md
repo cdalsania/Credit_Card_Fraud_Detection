@@ -234,6 +234,6 @@ The following is a list of the required languages, modules, and libraries that w
 </a>
 
 - - -
-### Copyright
+# Copyright
 
 Credit Card Fraud Detection © 2021. All Rights Reserved.
