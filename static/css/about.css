@@ -132,3 +132,22 @@ p {
     border-color: rgb(68, 110, 155);
     border-radius: 50%;
 }
+
+
+/* Adblock was blocking fontawesome icons so trying custom classnames as a workaround */
+
+.fa-custom-twitter:before {
+    content: "\f099";
+}
+
+.fa-custom-google:before {
+    content: "\f1a0";
+}
+
+.fa-custom-linkedin:before {
+    content: "\f0e1";
+}
+
+.fa-custom-github:before {
+    content: "\f09b";
+}
