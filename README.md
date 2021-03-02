@@ -183,6 +183,7 @@ While we could not reach out the goal of 100% accuracy in fraud detection, we cr
 The following is a list of the required languages, modules, and libraries that we used.
 
 * Jupyter Notebook
+* Tableau
 * Python
     * Pandas
     * Matplotlib
