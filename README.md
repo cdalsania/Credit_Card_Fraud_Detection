@@ -22,6 +22,7 @@
 * [Conclusion](#conclusion)
 * [Future Enhancements](#future-enhancements)
 * [Lessons Learned](#lessons-learned)
+* [Deployed App](#deployed-app)
 * [Requirements](#requirements)  
   * [Languages And Libraries](#languages-and-libraries)
 * [Collaborators](#collaborators)
@@ -176,6 +177,13 @@ While we could not reach out the goal of 100% accuracy in fraud detection, we cr
 * While we were trying to improve the model's performance using Hyperparameter tuning, a few parameters in specific models were causing the tuning process to take way too long to execute. Due to time constraints, we had to figure out which parameters were causing the delay in the Hyperparameter tuning process and eliminate them to speed up the process.
 
 * We learned how to handle imbalanced datasets using Undersampling and Oversampling methods.
+
+****
+# Deployed App
+
+We are excited to share our research and predictions in the Heroku app: [https://credit-card-fraud-detection-ml.herokuapp.com/](https://credit-card-fraud-detection-ml.herokuapp.com/)
+
+![Landing Page Screenshot](static/images/LandingPage_Screenshot.png)
 
 ***
 # Requirements
