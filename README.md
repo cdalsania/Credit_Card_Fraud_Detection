@@ -184,7 +184,7 @@ While we could not reach out the goal of 100% accuracy in fraud detection, we cr
 We are excited to share our research and predictions in the Heroku app: [https://credit-card-fraud-detection-ml.herokuapp.com/](https://credit-card-fraud-detection-ml.herokuapp.com/)
 
 <a href="https://credit-card-fraud-detection-ml.herokuapp.com/">
-  <img src="static/images/LandingPage_Screenshot.png" alt="Landing Page Screenshot" style="border:5px">
+  <img src="static/images/LandingPage_Screenshot.png" alt="Landing Page Screenshot" style="border:5px solid #555;">
 </a>
 
 ***
